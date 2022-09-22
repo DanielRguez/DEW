@@ -6,6 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DEW </title>
     <h1>Solo Probando el testeo</h1>
+    <script>
+
+        const objeto = {
+            nombre : "Pepe",
+            fecha: 1987,
+        };
+        objeto["fecha nacimiento"]= 1237;
+        console.log("Fecha:" +objeto["fecha nacimiento"]);
+
+        var a= 10;
+        function suma( a){
+            var b=5;
+            return (a+b);
+        }
+        {
+            var c = 7;
+        }
+        {
+            let d = 10;
+        }
+
+        console.log("Resultado de a: ", a);
+        //console.log("Resultado de b: "+ b); // error, no encuentra b definido
+        console.log("Resultado de b: "+ c);
+        //console.log("Resultado de b: "+ d); // error, no encuentra b definido
+        console.log("Resultado de a+b: "+ suma(a));
+        console.log("Resultado de a+b: "+ suma(7));
+
+
+
+        const date = new Date("2018/01/30 15:30:10.999");
+
+        date.setDate(15);           // Cambia a 15/01/2018 15:30:10.999 (Devuelve 1516030210999)
+        date.setMonth(1);           // Cambia a 15/02/2018 15:30:10.999 (Devuelve 1518708610999)
+        date.setFullYear(2020);     // Cambia a 15/02/2020 15:30:10.999 (Devuelve 1581780610999)
+        date.setHours(21);          // Cambia a 15/02/2020 21:30:10.999 (Devuelve 1581802210999)
+        date.setMinutes(00);        // Cambia a 15/02/2020 21:00:10.999 (Devuelve 1581800410999)
+        date.setSeconds(3);         // Cambia a 15/02/2020 21:00:03.999 (Devuelve 1581800403999)
+        date.setMilliseconds(79);   // Cambia a 15/02/2020 21:00:03.079 (Devuelve 1581800403079)
+        date.setTime(872817240000); // Cambia a 29/08/1997 02:14:00.000 (Devuelve 872817240000)
+
+    </script>
 </head>
 <body>
     
