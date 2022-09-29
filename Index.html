@@ -47,6 +47,28 @@
         date.setMilliseconds(79);   // Cambia a 15/02/2020 21:00:03.079 (Devuelve 1581800403079)
         date.setTime(872817240000); // Cambia a 29/08/1997 02:14:00.000 (Devuelve 872817240000)
 
+
+        var valores = [true, 5, false, "hola", "adios", -2];
+        if(valores[3] > valores[4]){
+                console.log("Hola: "+valores[3]);
+        }else{
+                console.log("Adios: "+valores[4]);
+
+        }
+
+        console.log("True: ", (valores[0] || valores[2]));
+        console.log("Resto: ", (valores[1] % valores[5]));
+        var a="a";
+        a++;
+        console.log("A: "+a);
+        var val= false;
+        (confirm("Vienes o vas?") ? alert("Hola") : alert("Adios") );
+
+
+
+        
+
+
     </script>
 </head>
 <body>
