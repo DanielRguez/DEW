@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DEW </title>
     <h1>Solo Probando el testeo</h1>
-    <script>
+    <script src="ScriptsUt1.js" type="module">
 
         const objeto = {
             nombre : "Pepe",
@@ -49,6 +49,9 @@
 
 
         var valores = [true, 5, false, "hola", "adios", -2];
+        valores.forEach(element => {
+            console.warn(element);
+        });
         if(valores[3] > valores[4]){
                 console.log("Hola: "+valores[3]);
         }else{
@@ -62,7 +65,16 @@
         a++;
         console.log("A: "+a);
         var val= false;
+
+        var valorTernario= (val ? "Solo texto" : 1233);
+        console.log("Valor ternario "+valorTernario);
         (confirm("Vienes o vas?") ? alert("Hola") : alert("Adios") );
+
+
+        if(isNaN(Number("1234"))){
+                console.log("No es numero");
+        }
+
 
 
 
